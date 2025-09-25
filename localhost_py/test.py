@@ -6,8 +6,8 @@ class Serv(BaseHTTPRequestHandler):
         if self.path == '/':
             try:
                 # Construct the full path to the HTML file
-                script_dir = os.path.dirname(os.path.abspath(__file__))
-                file_path = os.path.join(script_dir, 'Services', 'localhost_html', 'test.html')
+                script_dir = os.path.dirname(os.path.abspath("test.html"))
+                file_path = os.path.join(script_dir,"localhost_html\\test.html")
 
                 with open(file_path, 'r', encoding='utf-8') as f:
                     content = f.read()

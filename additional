@@ -1,0 +1,5 @@
+import os
+
+script_dir = os.path.dirname(os.path.abspath("test.html"))
+abs_path = os.path.join(script_dir,"localhost_html\\test.html")
+print(abs_path)
